@@ -1,0 +1,210 @@
+<!-- feedback.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Luxury Furniture</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="feedback.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+ <!-- Add this in the head section -->
+<link rel="stylesheet" href="navbar.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="nav-container">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.html">Luxury Furniture</a>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="feedback.html" class="active">Feedback</a></li>
+            </ul>
+        </div>
+
+        <!-- Search and Cart -->
+        <div class="nav-icons">
+            <div class="search-box">
+                <input type="text" placeholder="Search...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="cart-icon">
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</nav>
+<!-- Add this after the navbar and before your main content -->
+<div class="back-button">
+    <a href="Index.html">
+        <i class="fas fa-home"></i> Back to Home
+    </a>
+</div>
+    <!-- Feedback Section -->
+    <section class="feedback-section">
+        <div class="feedback-container">
+            <div class="feedback-header">
+                <h1>Customer Feedback</h1>
+                <p>We value your opinion! Please share your experience with us.</p>
+            </div>
+
+            <div class="feedback-content">
+                <!-- Feedback Form -->
+                <div class="feedback-form">
+                    <form id="feedbackForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Rate your experience</label>
+                            <div class="rating">
+                                <input type="radio" id="star5" name="rating" value="5">
+                                <label for="star5">★</label>
+                                <input type="radio" id="star4" name="rating" value="4">
+                                <label for="star4">★</label>
+                                <input type="radio" id="star3" name="rating" value="3">
+                                <label for="star3">★</label>
+                                <input type="radio" id="star2" name="rating" value="2">
+                                <label for="star2">★</label>
+                                <input type="radio" id="star1" name="rating" value="1">
+                                <label for="star1">★</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="category">Category</label>
+                            <select id="category" required>
+                                <option value="">Select a category</option>
+                                <option value="product">Product Quality</option>
+                                <option value="service">Customer Service</option>
+                                <option value="delivery">Delivery</option>
+                                <option value="website">Website Experience</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="feedback">Your Feedback</label>
+                            <textarea id="feedback" rows="5" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="suggestions">Suggestions for Improvement</label>
+                            <textarea id="suggestions" rows="3"></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Submit Feedback</button>
+                    </form>
+                </div>
+
+                <!-- Recent Feedback Display -->
+                <div class="recent-feedback">
+                    <h2>Recent Customer Reviews</h2>
+                    <div class="feedback-card">
+                        <div class="user-info">
+                            <img src="https://via.placeholder.com/40" alt="User">
+                            <div>
+                                <h4>John Doe</h4>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <p>"Excellent quality furniture and amazing customer service!"</p>
+                    </div>
+
+                    <div class="feedback-card">
+                        <div class="user-info">
+                            <img src="https://via.placeholder.com/40" alt="User">
+                            <div>
+                                <h4>PROFESSOR RUHAIL</h4>
+                                <div class="stars">★★★★☆</div>
+                            </div>
+                        </div>
+                        <p>"Very satisfied with my purchase. Quick delivery and great quality."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- Add this before closing body tag -->
+<footer class="footer">
+    <div class="footer-content">
+        <!-- About Section -->
+        <div class="footer-section">
+            <h3>About Us</h3>
+            <p>Luxury Furniture provides premium quality furniture with elegant designs for your home and office.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+
+        <!-- Categories -->
+        <div class="footer-section">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#">Beds</a></li>
+                <li><a href="#">Sofas</a></li>
+                <li><a href="#">Dining Tables</a></li>
+                <li><a href="#">Wardrobes</a></li>
+                <li><a href="#">Office Furniture</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <ul class="contact-info">
+                <li><i class="fas fa-phone"></i> +1 234 567 8900</li>
+                <li><i class="fas fa-envelope"></i> info@luxuryfurniture.com</li>
+                <li><i class="fas fa-map-marker-alt"></i> 123 Furniture Street, NY</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 Luxury Furniture. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
